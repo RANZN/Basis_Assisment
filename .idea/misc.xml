@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/PRAKASH RANJAN/AndroidStudioProjects/Kotlin/BasisAssisment/app/src/main/res/layout/activity_main.xml" value="0.30185185185185187" />
+        <entry key="..\:/Users/PRAKASH RANJAN/AndroidStudioProjects/Kotlin/BasisAssisment/app/src/main/res/drawable/ic_repeat.xml" value="0.3452502553626149" />
+        <entry key="..\:/Users/PRAKASH RANJAN/AndroidStudioProjects/Kotlin/BasisAssisment/app/src/main/res/drawable/item_layout.xml" value="0.3452502553626149" />
+        <entry key="..\:/Users/PRAKASH RANJAN/AndroidStudioProjects/Kotlin/BasisAssisment/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/PRAKASH RANJAN/AndroidStudioProjects/Kotlin/BasisAssisment/app/src/main/res/layout/item_layout.xml" value="0.2" />
       </map>
     </option>
   </component>
