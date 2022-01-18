@@ -54,7 +54,6 @@ class Repo {
             })
     }
 
-
     fun fetchData1(): Disposable =
         Network.getApiClient().getData()
             .subscribeOn(Schedulers.io())

@@ -17,5 +17,4 @@ class ViewModelFactory(private val repo: Repo) : ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         return TheViewModel(repo) as T
     }
-
 }

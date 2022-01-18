@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setUI(list: List<ResponseModel>) {
-        Log.d("ranzn", "setUI: $list")
+
     }
 
     override fun onStop() {

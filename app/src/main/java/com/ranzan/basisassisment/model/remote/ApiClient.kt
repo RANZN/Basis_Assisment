@@ -1,7 +1,6 @@
 package com.ranzan.basisassisment.model.remote
 
 import io.reactivex.rxjava3.core.Observable
-import retrofit2.http.Body
 import retrofit2.http.GET
 
 interface ApiClient {
