@@ -8,7 +8,7 @@ import com.ranzan.basisassisment.R
 import com.ranzan.basisassisment.databinding.ItemLayoutBinding
 import com.ranzan.basisassisment.model.remote.ResponseModel
 
-class CardAdapter(private val list: List<ResponseModel>, private val progressData: ProgressData) :
+class CardAdapter(private val list: List<ResponseModel>) :
     RecyclerView.Adapter<CardAdapter.CardViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
@@ -18,7 +18,6 @@ class CardAdapter(private val list: List<ResponseModel>, private val progressDat
     }
 
     override fun onBindViewHolder(holder: CardViewHolder, position: Int) {
-        progressData.progressData(holder.adapterPosition, list.size)
         holder.setData(list[position])
     }
 

@@ -21,6 +21,7 @@ class Repo {
         Network.getApiClient().getData()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
+//            .map{object-> }
             .subscribe(object : Observer<String> {
                 override fun onSubscribe(d: Disposable) {
                     list.clear()
@@ -52,6 +53,11 @@ class Repo {
                     return liveData.postValue(list)
                 }
             })
+    }
+
+    private fun response(): String {
+        return ""
+
     }
 
     fun fetchData1(): Disposable =
