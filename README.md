@@ -2,9 +2,9 @@
 
 
 <h3>DEMO</h3>
-<p>
-  <img height='500' src="https://user-images.githubusercontent.com/40376163/150124463-3924bc54-3584-46aa-a647-a760f5a532b1.gif"/>
-</p>
+
+<img height='450' src="https://user-images.githubusercontent.com/40376163/150124463-3924bc54-3584-46aa-a647-a760f5a532b1.gif"/>
+
 
 # Open Source Library
 * [Retrofit](https://square.github.io/retrofit/)
@@ -23,6 +23,17 @@
 * RxJava
 
 # Dependencies
+```
+    plugins {
+      id 'com.android.application'
+      id 'kotlin-android'
+      id 'kotlin-kapt'
+    }
+
+    buildFeatures {
+        dataBinding true
+    }
+```
 ```
     //Retrofit
     implementation 'com.squareup.retrofit2:retrofit:2.9.0'
