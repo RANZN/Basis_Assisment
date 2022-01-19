@@ -41,6 +41,7 @@ class MainActivity : AppCompatActivity() {
             override fun onPageSelected(position: Int) {
                 super.onPageSelected(position)
                 setProgressBar(position + 1)
+                binding.progressData.text = "${position + 1} /${dataList.size}"
             }
         })
     }
