@@ -22,6 +22,13 @@
 * Android Studio
 * RxJava
 
+
+# Clone this Repo To Your System Using Android Studio
+* Open your Android Studio then go to the File > New > Project from Version Control.
+* After clicking on the Project from Version Control a pop-up screen will arise. In the Version control choose Git from the drop-down menu.
+* Then at last paste the link in the URL and choose your Directory. Click on the Clone button and you are done.
+
+
 # Dependencies
 ```
     plugins {
