@@ -59,13 +59,11 @@ class MainActivity : AppCompatActivity() {
         binding.viewPager.apply {
             adapter = cardAdapter
         }
-
     }
 
     override fun onDestroy() {
         super.onDestroy()
         disposable.dispose()
     }
-
 }
 

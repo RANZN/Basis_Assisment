@@ -1,7 +1,6 @@
 package com.ranzan.basisassisment.viewmodel
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.ranzan.basisassisment.model.Repo
@@ -9,9 +8,8 @@ import com.ranzan.basisassisment.model.remote.ResponseModel
 
 class TheViewModel(private val repo: Repo) : ViewModel() {
 
-    fun fetchData() = repo.fetchData1()
+    fun fetchData() = repo.fetchData()
     fun getData(): LiveData<List<ResponseModel>> = repo.getLiveData()
-
 
 }
 

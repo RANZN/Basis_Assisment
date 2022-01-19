@@ -17,50 +17,8 @@ class Repo {
     private var list = mutableListOf<ResponseModel>()
     private val liveData = MutableLiveData<List<ResponseModel>>()
 
-    fun fetchData() {
-        Network.getApiClient().getData()
-            .subscribeOn(Schedulers.io())
-            .observeOn(AndroidSchedulers.mainThread())
-//            .map{object-> }
-            .subscribe(object : Observer<String> {
-                override fun onSubscribe(d: Disposable) {
-                    list.clear()
-                }
 
-                override fun onNext(t: String) {
-                    val str: String = t.substring(1)
-                    val jsonData = JSONObject(str)
-                    try {
-                        val responseArray: JSONArray = jsonData.getJSONArray("data")
-                        for (i in 0 until responseArray.length()) {
-                            val jsonObject: JSONObject = responseArray.getJSONObject(i)
-
-                            val id = jsonObject.getString("id")
-                            val text = jsonObject.getString("text")
-                            list.add(ResponseModel(id.toInt(), text))
-
-                        }
-                    } catch (e: Exception) {
-                        Log.d("ranzn", e.toString())
-                    }
-                }
-
-                override fun onError(e: Throwable) {
-                    Log.d("ranzn", "onError: $e")
-                }
-
-                override fun onComplete() {
-                    return liveData.postValue(list)
-                }
-            })
-    }
-
-    private fun response(): String {
-        return ""
-
-    }
-
-    fun fetchData1(): Disposable =
+    fun fetchData(): Disposable =
         Network.getApiClient().getData()
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())

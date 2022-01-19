@@ -11,9 +11,7 @@ import com.ranzan.basisassisment.model.remote.ResponseModel
 class CardAdapter(private val list: List<ResponseModel>) :
     RecyclerView.Adapter<CardAdapter.CardViewHolder>() {
 
-    override fun getItemViewType(position: Int): Int {
-        return super.getItemViewType(position)
-    }
+
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CardViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         val binding: ItemLayoutBinding = DataBindingUtil.inflate(layoutInflater, R.layout.item_layout, parent, false)
