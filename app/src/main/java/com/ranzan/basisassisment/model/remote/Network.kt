@@ -7,6 +7,7 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.scalars.ScalarsConverterFactory
 
 object Network {
+
     fun getApiClient(): ApiClient = Retrofit.Builder()
         .baseUrl("https://gist.githubusercontent.com/")
         .addConverterFactory(ScalarsConverterFactory.create())

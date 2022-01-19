@@ -20,8 +20,10 @@ class MainActivity : AppCompatActivity() {
     private lateinit var disposable: Disposable
     private lateinit var binding: ActivityMainBinding
     private lateinit var dataList: List<ResponseModel>
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
         viewModel = ViewModelProvider(this, ViewModelFactory(Repo())).get(TheViewModel::class.java)

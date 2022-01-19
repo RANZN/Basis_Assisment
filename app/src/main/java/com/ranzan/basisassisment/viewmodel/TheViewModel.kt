@@ -9,6 +9,7 @@ import com.ranzan.basisassisment.model.remote.ResponseModel
 class TheViewModel(private val repo: Repo) : ViewModel() {
 
     fun fetchData() = repo.fetchData()
+
     fun getData(): LiveData<List<ResponseModel>> = repo.getLiveData()
 
 }

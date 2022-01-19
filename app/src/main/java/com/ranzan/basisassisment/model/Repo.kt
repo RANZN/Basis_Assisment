@@ -1,12 +1,10 @@
 package com.ranzan.basisassisment.model
 
-import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.ranzan.basisassisment.model.remote.Network
 import com.ranzan.basisassisment.model.remote.ResponseModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
-import io.reactivex.rxjava3.core.Observer
 import io.reactivex.rxjava3.disposables.Disposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import org.json.JSONArray
